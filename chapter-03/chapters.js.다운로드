@@ -1,0 +1,1 @@
+function setYtEmbedSize(){if(document.querySelector(".video")){var e=window.innerWidth,t=e/560*340;document.querySelector(".video").style.height=t+"px"}}window.onresize=function(){setYtEmbedSize()},window.onload=function(){setYtEmbedSize();for(var e=document.getElementById("content").getElementsByTagName("a"),t=0;t<e.length;t++)e[t].setAttribute("target","_blank")};
