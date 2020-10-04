@@ -1,6 +1,13 @@
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/fdb56aa4-8753-4436-9267-8737d035040e/stylesheets/characters.css);
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/fdb56aa4-8753-4436-9267-8737d035040e/stylesheets/keyframes.css);
 
+.container .content_grid .remark {
+  color: #888888;
+  padding-left: 0%;
+  padding-right: 20%;
+  text-align: left;
+  font-size: small;
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #000;
