@@ -1,7 +1,29 @@
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/characters.css);
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/keyframes.css);
 
-.container .content_grid .remark {
+.rulebook {
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+.container .content_grid.text.rulebook {
+  background-color: #fff;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 25px 0;
+}
+.container .content_grid.text.rulebook p {
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+.container .content_grid.text.rulebook p em {
+  background-color: #ffff00;
+  font-style: initial;
+}
+
+.container .container .content_grid .remark {
   color: #888888;
   padding-left: 0%;
   padding-right: 20%;
