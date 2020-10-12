@@ -1,6 +1,14 @@
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/characters.css);
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/keyframes.css);
 
+.remark {
+  color: #888888;
+  padding-left: 0%;
+  padding-right: 20%;
+  text-align: left;
+  font-size: small;
+}
+
 .rulebook {
   color: #000;
   padding-left: 0;
@@ -23,13 +31,6 @@
   font-style: initial;
 }
 
-.container .container .content_grid .remark {
-  color: #888888;
-  padding-left: 0%;
-  padding-right: 20%;
-  text-align: left;
-  font-size: small;
-}
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #000;
