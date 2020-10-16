@@ -1,12 +1,57 @@
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/characters.css);
 @import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/0d7a52e7-f4dc-4ba8-8600-ad3555680742/stylesheets/keyframes.css);
 
-.remark {
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes showSplashButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#splash-screen-btn {
+  background-color: white;
+  color: black;
+  text-align: center;
+
+  opacity: 0;
+  animation: showSplashButton 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+.splash-screen {
+  background-color: black;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-screen img {
+  flex-shrink: 0;
+  width: 40%;
+}
+
+.splash-screen p {
+  width: 40vw;
+  margin: 10px;
   color: #888888;
-  padding-left: 0%;
-  padding-right: 20%;
-  text-align: left;
-  font-size: small;
 }
 
 .rulebook {
@@ -31,11 +76,20 @@
   font-style: initial;
 }
 
+.remark {
+  color: #888888;
+  padding-left: 0%;
+  padding-right: 20%;
+  text-align: left;
+  font-size: small;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #000;
   margin: 0;
   word-break: keep-all;
+  overflow-x: hidden; /* Hide scrollbars */
 }
 body img {
   width: 100%;
