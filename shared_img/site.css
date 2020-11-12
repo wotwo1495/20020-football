@@ -1,17 +1,96 @@
-@import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/fdb56aa4-8753-4436-9267-8737d035040e/stylesheets/characters.css);
-@import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/fdb56aa4-8753-4436-9267-8737d035040e/stylesheets/keyframes.css);
+@import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/7974828a-3e46-4385-8d45-56e5068cff66/stylesheets/characters.css);
+@import url(https://cdn.vox-cdn.com/csk/4d8f071f-7f23-4b6e-b181-ca507d75f34f/7974828a-3e46-4385-8d45-56e5068cff66/stylesheets/keyframes.css);
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400");
 
-.container .content_grid .remark {
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes showSplashButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#splash-screen-btn {
+  background-color: white;
+  color: black;
+  text-align: center;
+
+  opacity: 0;
+  animation: showSplashButton 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+.splash-screen {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-screen img {
+  flex-shrink: 0;
+  width: 440px;
+}
+
+.splash-screen p {
+  width: 440px;
+  margin: 10px;
+  color: #888888;
+}
+
+.rulebook {
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+.container .content_grid.text.rulebook {
+  background-color: #fff;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 25px 0;
+}
+.container .content_grid.text.rulebook p {
+  color: #000;
+  font-family: "Nanum Myeongjo", Times, serif;
+  font-size: 1.25rem;
+}
+.container .content_grid.text.rulebook p em {
+  background-color: #ffff00;
+  font-style: initial;
+}
+
+.remark {
   color: #888888;
   padding-left: 0%;
   padding-right: 20%;
   text-align: left;
   font-size: small;
 }
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #000;
   margin: 0;
+  word-break: keep-all;
+  overflow-x: hidden; /* Hide scrollbars */
 }
 body img {
   width: 100%;
